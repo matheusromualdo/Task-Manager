@@ -80,7 +80,7 @@ with st.container():
                 c1, c2, c3 = st.columns([5, 2, 1])
                 with c1:
                     st.markdown(f"""
-                        <div style="padding: 1rem; margin: 1rem 0; background: #f8fafc; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 2px 2px 6px rgba(0,0,0,0.05);">
+                        <div style="padding: 1rem; margin: 1rem 0; background: #f8fafc; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 2px 2px 6px rgba(0,0,0,0.05); color:red;">
                             {row["tarefa"]}
                         </div>
                     """, unsafe_allow_html=True)
@@ -141,7 +141,7 @@ with st.container():
                     y=-0.2,
                     xanchor="center",
                     x=0.5,
-                    font=dict(size=14)
+                    font=dict(size=14, color='red')
                 )
             )
 
